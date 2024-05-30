@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optio - Options Analysis Software</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+</head>
+<body>
+    <header>
+	
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+            <h1 id="title">Optio: Option Pricing and Monte Carlo Simulation</h1>
+        </div>
+        <div class="header-controls">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle" onchange="toggleTheme()">
+                <span class="slider round"></span>
+            </label>
+             <div class="language-switcher">
+                <button class="language-button" id="lang-en" onclick="changeLanguage('en')">EN</button>
+                <button class="language-button" id="lang-ru" onclick="changeLanguage('ru')">RU</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="intro">
+            <p id="intro-text">
+                Welcome to our Option Pricing and Monte Carlo Simulation program. This program provides accurate pricing for call and put options and uses Monte Carlo simulation to model the price of underlying assets. With a user-friendly interface and interactive charts, you can easily upload and analyze your data.
+            </p>
+        </section>
+       <section id="features">
+            <h2 id="features-title">Features</h2>
+            <div class="card hidden">
+                <h3>Feature 1: Accurate Pricing of Call and Put Options</h3>
+                <p id="feature1-description">This program uses the Black-Scholes model to value put and call options. The model provides good accuracy and is time-tested.</p>
+            </div>
+            <div class="card hidden">
+                <h3>Feature 2: Monte Carlo Simulation for Price Modeling</h3>
+                <p id="feature2-description">Utilize Monte Carlo simulations to model the future prices of underlying assets, allowing for comprehensive risk and return assessments.</p>
+            </div>
+            <div class="card hidden">
+                <h3>Feature 3: User-friendly Interface</h3>
+                <p id="feature3-description">The intuitive and easy-to-navigate interface makes it simple for users of all experience levels to utilize the program's powerful features.</p>
+            </div>
+            <div class="card hidden">
+                <h3>Feature 4: Interactive Charts</h3>
+                <p id="feature4-description">Interactive charts provide a visual representation of your data, making it easier to identify trends and make informed decisions.</p>
+            </div>
+            <div class="card hidden">
+                <h3>Feature 5: Support for CSV Data Upload</h3>
+                <p id="feature5-description">Easily upload your data in CSV format to start analyzing it with our program's advanced tools and features.</p>
+            </div>
+        </section>
+        <section id="example">
+            <h2 id="example-title">Примеры работы</h2>
+             <div class="tabs">
+                <button class="tab-button active" onclick="showTab('option-pricing')">Оценка опциона</button>
+                <button class="tab-button" onclick="showTab('monte-carlo')">Моделирование цены Базового актива</button>
+                <button class="tab-button" onclick="showTab('historical-data')">Put option delta</button>
+                <button class="tab-button" onclick="showTab('volatility-analysis')">Jumping diffusion</button>
+            </div>
+            <div id="option-pricing" class="tab-content active">
+                <img src="assets/callopt-en.png" alt="Option Pricing Screenshot" class="example-image">
+            </div>
+            <div id="monte-carlo" class="tab-content">
+                <img src="assets/MK-en.png" alt="Monte Carlo Simulation Screenshot" class="example-image">
+            </div>
+            <div id="historical-data" class="tab-content">
+                <img src="assets/put-delta-en.png" alt="Historical Data Analysis Screenshot" class="example-image">
+            </div>
+            <div id="volatility-analysis" class="tab-content">
+                <img src="assets/jd-en.png" alt="Volatility Analysis Screenshot" class="example-image">
+            </div>
+        </section>
+        <section id="future-plans">
+            <h2 id="future-plans-title">Future Plans</h2>
+            <p id="future-plans-text">We plan to add support for more complex financial instruments, improve the interface, and add automatic model parameter optimization capabilities.</p>
+        </section>
+        <section id="system-requirements">
+            <h2 id="system-requirements-title">System Requirements</h2>
+            <ul id="system-requirements-list">
+                <li>Operating System: Windows 10 or higher.</li>
+                <li>Processor: Intel Core i5 or higher</li>
+                <li>RAM: 8 GB or higher</li>
+                <li>Disk Space: 500 MB or more</li>
+            </ul>
+                 <div class="download-buttons">
+                <button  id="download-button-en"><a href="https://drive.google.com/file/d/1GzXVVS8vlsrNG1oEylaL9gmKHUs_1vxm/view?usp=sharing" >Download English Version</a>
+                <button id="download-button-ru"><a href="https://drive.google.com/file/d/1A0R0Z2v8faNIq8uUQKJJ7cHYFticzDph/view?usp=sharing" >Скачать русскую версию</a></button>
+            </div>
+        </section>
+        <section id="install">
+            <h2 id="install-title">Install</h2>
+            <p id="install-text">Download the version in the language you need. Unzip the zip archive to a convenient location. In the folder, find the file "main.exe" and run this application, after a short download the main application window will appear.</p>
+        </section>
+        <section id="faq">
+            <h2 id="faq-title">FAQ</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">How to upload data into the program?</h3>
+                <p class="faq-answer">You can upload data in CSV format using the corresponding function in the program menu.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">What data is needed for option pricing?</h3>
+                <p class="faq-answer">For option pricing, you need historical data on the underlying asset prices, volatility, risk-free rate, and time to option expiration.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">How does the Monte Carlo method work?</h3>
+                <p class="faq-answer">The Monte Carlo method uses random sampling to simulate future prices of the underlying asset, allowing for risk and return assessment of financial instruments.</p>
+            </div>
+			 <div class="faq-item">
+                <h3 class="faq-question">Does this program have instructions?</h3>
+                <p class="faq-answer">Yes, to obtain more detailed information about the program, you need to open the "Reference" tab in the program. This tab describes some features of the program.
+        </section>
+       </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Optio. All rights reserved.</p>
+            <p><a href="#about" onclick="showAbout()">About Us</a></p>
+        </div>
+    </footer>
+    <div id="about-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeAbout()">&times;</span>
+            <h2>About Us</h2>
+            <p>The main developer of the Optio program is Markov Gleb. For questions and suggestions, use the following email address: markovgleb1513@gmail.com</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="languages.js"></script>
+</body>
+</html>
