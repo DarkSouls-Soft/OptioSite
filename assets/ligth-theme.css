@@ -1,0 +1,7 @@
+/* light-theme.css */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --header-background: #f0f0f0;
+    --header-text: #000000;
+}

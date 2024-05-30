@@ -1,0 +1,7 @@
+/* dark-theme.css */
+:root {
+    --background-color: #181818;
+    --text-color: #ffffff;
+    --header-background: #282828;
+    --header-text: #ffffff;
+}
