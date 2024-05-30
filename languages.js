@@ -1,6 +1,6 @@
 const languages = {
     en: {
-        title: 'Optio - Options Analysis Software',
+        title: 'Optio-Options Analysis Software',
         featuresTitle: 'Features',
         introText: 'Welcome to our Option Pricing and Monte Carlo Simulation program. This program provides accurate pricing for call and put options and uses Monte Carlo simulation to model the price of underlying assets. With a user-friendly interface and interactive charts, you can easily upload and analyze your data.',
         feature1: 'Accurate Pricing of Call and Put Options',
@@ -46,7 +46,7 @@ const languages = {
         }
     },
     ru: {
-        title: 'Программа Анализа Опционов - Optio',
+        title: 'Программа Анализа Опционов-Optio',
         featuresTitle: 'Особенности',
         introText: 'Добро пожаловать в нашу программу оценки опционов и моделирования Монте-Карло. Эта программа предоставляет точную оценку опционов колл и пут и использует моделирование Монте-Карло для моделирования цены базовых активов. С удобным интерфейсом и интерактивными графиками вы можете легко загружать и анализировать свои данные.',
         feature1: 'Точная оценка опционов колл и пут',
