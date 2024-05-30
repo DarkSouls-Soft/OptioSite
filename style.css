@@ -66,6 +66,7 @@ header {
 }
 
 .switch {
+    flex: 1;
     position: relative;
     display: inline-block;
     width: 50px;
