@@ -66,7 +66,6 @@ header {
 }
 
 .switch {
-    flex: 1;
     position: relative;
     display: inline-block;
     width: 50px;
@@ -310,4 +309,60 @@ footer a:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #title {
+        font-size: 1.2em;
+    }
+
+    .header-controls {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5em;
+        margin-top: 1em;
+    }
+
+    .switch {
+        width: 40px;
+        height: 20px;
+    }
+
+    .slider:before {
+        height: 16px;
+        width: 16px;
+        left: 2px;
+        bottom: 2px;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(20px);
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab-button {
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+    }
+
+    .download-button {
+        width: 100%;
+    }
 }
